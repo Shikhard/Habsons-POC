@@ -62,30 +62,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\C__migrationhistory.cs">
-      <DependentUpon>mysql.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataAccess\mysql.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>mysql.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataAccess\mysql.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>mysql.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataAccess\mysql.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>mysql.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="DataAccess\userdata.cs">
-      <DependentUpon>mysql.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataAccess\userdetail.cs">
-      <DependentUpon>mysql.tt</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -93,29 +69,19 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <EntityDeploy Include="DataAccess\mysql.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>mysql.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="DataAccess\mysql.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>mysql.edmx</DependentUpon>
-      <LastGenOutput>mysql.Context.cs</LastGenOutput>
-    </None>
-    <None Include="DataAccess\mysql.edmx.diagram">
-      <DependentUpon>mysql.edmx</DependentUpon>
-    </None>
-    <None Include="DataAccess\mysql.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>mysql.edmx</DependentUpon>
-      <LastGenOutput>mysql.cs</LastGenOutput>
-    </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MSDataAccess\" />
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{e7a0c167-c251-4ce4-bd3e-090938f11cd2}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Entities\Entities.csproj">
+      <Project>{810478af-bb1d-4bea-82a3-37ab27396b2f}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

@@ -7,18 +7,22 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MySqlDataFirstConsole.DataAccess
+namespace Entities.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class userdata
+    public partial class userdetail
     {
-        public int UserId { get; set; }
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
-        public Nullable<int> UserDetails_UserDetailsId { get; set; }
+        public userdetail()
+        {
+            this.userdatas = new HashSet<userdata>();
+        }
     
-        public virtual userdetail userdetail { get; set; }
+        public int UserDetailsId { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+    
+        public virtual ICollection<userdata> userdatas { get; set; }
     }
 }

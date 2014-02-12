@@ -7,8 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MySqlDataFirstConsole.DataAccess
+namespace DB
 {
+    using Entities.Model;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
