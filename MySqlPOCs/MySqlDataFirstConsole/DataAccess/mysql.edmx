@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="demoModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.6" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="__migrationhistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+          </Key>
+          <Property Name="MigrationId" Type="varchar" MaxLength="150" Nullable="false" />
+          <Property Name="ContextKey" Type="varchar" MaxLength="300" Nullable="false" />
+          <Property Name="Model" Type="longblob" Nullable="false" />
+          <Property Name="ProductVersion" Type="varchar" MaxLength="32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="userdatas">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="longtext" />
+          <Property Name="LastName" Type="longtext" />
+          <Property Name="UserDetails_UserDetailsId" Type="int" />
+        </EntityType>
+        <EntityType Name="userdetails">
+          <Key>
+            <PropertyRef Name="UserDetailsId" />
+          </Key>
+          <Property Name="UserDetailsId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="City" Type="longtext" />
+          <Property Name="State" Type="longtext" />
+        </EntityType>
+        <Association Name="FK_userdatas_userdetails_UserDetails_UserDetailsId">
+          <End Role="userdetails" Type="Self.userdetails" Multiplicity="0..1" />
+          <End Role="userdatas" Type="Self.userdatas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="userdetails">
+              <PropertyRef Name="UserDetailsId" />
+            </Principal>
+            <Dependent Role="userdatas">
+              <PropertyRef Name="UserDetails_UserDetailsId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="demoModelStoreContainer">
+          <EntitySet Name="__migrationhistory" EntityType="Self.__migrationhistory" Schema="demo" store:Type="Tables" />
+          <EntitySet Name="userdatas" EntityType="Self.userdatas" Schema="demo" store:Type="Tables" />
+          <EntitySet Name="userdetails" EntityType="Self.userdetails" Schema="demo" store:Type="Tables" />
+          <AssociationSet Name="FK_userdatas_userdetails_UserDetails_UserDetailsId" Association="Self.FK_userdatas_userdetails_UserDetails_UserDetailsId">
+            <End Role="userdetails" EntitySet="userdetails" />
+            <End Role="userdatas" EntitySet="userdatas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="demoModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="C__migrationhistory">
+          <Key>
+            <PropertyRef Name="MigrationId" />
+          </Key>
+          <Property Name="MigrationId" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ContextKey" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Model" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+          <Property Name="ProductVersion" Type="String" MaxLength="32" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityType Name="userdata">
+          <Key>
+            <PropertyRef Name="UserId" />
+          </Key>
+          <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <Property Name="UserDetails_UserDetailsId" Type="Int32" />
+          <NavigationProperty Name="userdetail" Relationship="Self.FK_userdatas_userdetails_UserDetails_UserDetailsId" FromRole="userdatas" ToRole="userdetails" />
+        </EntityType>
+        <EntityType Name="userdetail">
+          <Key>
+            <PropertyRef Name="UserDetailsId" />
+          </Key>
+          <Property Name="UserDetailsId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="City" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <Property Name="State" Type="String" MaxLength="1073741823" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="userdatas" Relationship="Self.FK_userdatas_userdetails_UserDetails_UserDetailsId" FromRole="userdetails" ToRole="userdatas" />
+        </EntityType>
+        <Association Name="FK_userdatas_userdetails_UserDetails_UserDetailsId">
+          <End Role="userdetails" Type="Self.userdetail" Multiplicity="0..1" />
+          <End Role="userdatas" Type="Self.userdata" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="userdetails">
+              <PropertyRef Name="UserDetailsId" />
+            </Principal>
+            <Dependent Role="userdatas">
+              <PropertyRef Name="UserDetails_UserDetailsId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="demoEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="C__migrationhistory" EntityType="Self.C__migrationhistory" />
+          <EntitySet Name="userdatas" EntityType="Self.userdata" />
+          <EntitySet Name="userdetails" EntityType="Self.userdetail" />
+          <AssociationSet Name="FK_userdatas_userdetails_UserDetails_UserDetailsId" Association="Self.FK_userdatas_userdetails_UserDetails_UserDetailsId">
+            <End Role="userdetails" EntitySet="userdetails" />
+            <End Role="userdatas" EntitySet="userdatas" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="demoModelStoreContainer" CdmEntityContainer="demoEntities">
+          <EntitySetMapping Name="C__migrationhistory">
+            <EntityTypeMapping TypeName="demoModel.C__migrationhistory">
+              <MappingFragment StoreEntitySet="__migrationhistory">
+                <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+                <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+                <ScalarProperty Name="Model" ColumnName="Model" />
+                <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="userdatas">
+            <EntityTypeMapping TypeName="demoModel.userdata">
+              <MappingFragment StoreEntitySet="userdatas">
+                <ScalarProperty Name="UserId" ColumnName="UserId" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="UserDetails_UserDetailsId" ColumnName="UserDetails_UserDetailsId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="userdetails">
+            <EntityTypeMapping TypeName="demoModel.userdetail">
+              <MappingFragment StoreEntitySet="userdetails">
+                <ScalarProperty Name="UserDetailsId" ColumnName="UserDetailsId" />
+                <ScalarProperty Name="City" ColumnName="City" />
+                <ScalarProperty Name="State" ColumnName="State" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
