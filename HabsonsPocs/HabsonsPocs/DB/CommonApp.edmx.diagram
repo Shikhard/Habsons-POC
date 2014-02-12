@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="90265d90079544d096b82a964270dd8c" Name="Diagram1">
+        <EntityTypeShape EntityType="CACloud14Model.AddAnotherGrp" Width="1.5" PointX="7.5" PointY="41.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.AddAnotherGrpItem" Width="1.5" PointX="12.75" PointY="41.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.AddAnotherGrpItemDetail" Width="1.5" PointX="18" PointY="46.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ApplicantForm" Width="1.5" PointX="3" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ApplicantMember" Width="1.5" PointX="0.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ApplicantProfile" Width="1.5" PointX="1.5" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ApplicantType" Width="1.5" PointX="1.5" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ChoiceGroup" Width="1.5" PointX="8.25" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ChoiceGrpReqRule" Width="1.5" PointX="15.75" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ChoiceGrpRuleImpact" Width="1.5" PointX="23.25" PointY="41.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ChoiceGrpRuleTrigger" Width="1.5" PointX="21" PointY="40.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ChoiceValue" Width="1.5" PointX="18.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.CollegeLookup" Width="1.5" PointX="7.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.CommonAnswer" Width="1.5" PointX="12.75" PointY="34.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Deadline" Width="1.5" PointX="7.75" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.DeadlineType" Width="1.5" PointX="5.5" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.DecisionType" Width="1.5" PointX="1.5" PointY="47.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.DownloadDataHistory" Width="1.5" PointX="15.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ExportFileType" Width="1.5" PointX="18.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ExportTemplate" Width="1.5" PointX="21" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ExportTemplateField" Width="1.5" PointX="23.25" PointY="30" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ExportType" Width="1.5" PointX="18.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Form" Width="1.5" PointX="0.75" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.HighSchoolLookup" Width="1.5" PointX="15.75" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Invitation" Width="1.5" PointX="3.75" PointY="55.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.InvitationEmailRequest" Width="1.5" PointX="6" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.KeyfactsXMLData" Width="1.5" PointX="9.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Member" Width="1.5" PointX="6" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberAddAnotherGrpItemDetTemplate" Width="1.5" PointX="15.75" PointY="54.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberAddAnotherGrpItemTemplate" Width="1.5" PointX="10.5" PointY="33.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberAddAnotherGrpTemplate" Width="1.5" PointX="5.25" PointY="30.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberAnswer" Width="1.5" PointX="12.75" PointY="45.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberFee" Width="1.5" PointX="3.75" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberKeyfact" Width="1.5" PointX="8.25" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberPaymentConfig" Width="1.5" PointX="3.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberQuestionTemplate" Width="1.5" PointX="8.25" PointY="47.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberRecPersonaSubType" Width="1.5" PointX="11.25" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberReqGroupDetailTemplate" Width="1.5" PointX="13.5" PointY="29.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberReqGroupTemplate" Width="1.5" PointX="13.5" PointY="54.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberReqRuleExpTemplate" Width="1.5" PointX="16.5" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberReqRuleTemplate" Width="1.5" PointX="14.25" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberReqRuleTrgrTemplate" Width="1.5" PointX="13.5" PointY="65.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberScreenTemplate" Width="1.5" PointX="3.75" PointY="48.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberSectionTemplate" Width="1.5" PointX="6" PointY="47.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberType" Width="1.5" PointX="3.75" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberValGroupDetailTemplate" Width="1.5" PointX="16.5" PointY="25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MemberValGroupTemplate" Width="1.5" PointX="14.25" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MetricsSummaryDaily" Width="1.5" PointX="17.75" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.MetricsSummaryHistory" Width="1.5" PointX="18.75" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ParentEDAnswer" Width="1.5" PointX="20.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Payment" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.PaymentRequest" Width="1.5" PointX="22.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.PaymentResponse" Width="1.5" PointX="23.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.PdfReGenQueue" Width="1.5" PointX="2.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.PmtReconciliation" Width="1.5" PointX="15.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.PmtReconciliationDetail" Width="1.5" PointX="18" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.PoolStageCode" Width="1.5" PointX="24.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Privilege" Width="1.5" PointX="11" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Question" Width="1.5" PointX="10.5" PointY="37.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.QuestionType" Width="1.5" PointX="6" PointY="52.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.RecAssignment" Width="1.5" PointX="8.25" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.RecForm" Width="1.5" PointX="6" PointY="35" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.RecFormAnswer" Width="1.5" PointX="3" PointY="28.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.RecPersonaSubType" Width="1.5" PointX="9" PointY="26.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.RecPersonaType" Width="1.5" PointX="1.5" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.RecProfile" Width="1.5" PointX="20.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.RecProfileAnswer" Width="1.5" PointX="12.75" PointY="58.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.RecSummaryHistory" Width="1.5" PointX="22.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ReqGroup" Width="1.5" PointX="15.75" PointY="58" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ReqGroupDetail" Width="1.5" PointX="15.75" PointY="36.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ReqRule" Width="1.5" PointX="16.5" PointY="63.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ReqRuleExpression" Width="1.5" PointX="18.75" PointY="41.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ReqRuleTrigger" Width="1.5" PointX="15.75" PointY="46.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ResidencyType" Width="1.5" PointX="1.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Role" Width="1.5" PointX="11" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.RoleMember" Width="1.5" PointX="13.25" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.RolePrivilege" Width="1.5" PointX="13.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Screen" Width="1.5" PointX="3" PointY="40.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ScreenType" Width="1.5" PointX="0.75" PointY="41.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SDSConfig" Width="1.5" PointX="23.25" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SDSSchedule" Width="1.5" PointX="25.5" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SeasonPrivilege" Width="1.5" PointX="13.25" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Section" Width="1.5" PointX="5.25" PointY="41" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SessionLog" Width="1.5" PointX="24.75" PointY="24.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers1" Width="1.5" PointX="25.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers10" Width="1.5" PointX="26.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers11" Width="1.5" PointX="27.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers12" Width="1.5" PointX="27.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers13" Width="1.5" PointX="27.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers14" Width="1.5" PointX="28.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers15" Width="1.5" PointX="26.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers2" Width="1.5" PointX="28.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers3" Width="1.5" PointX="29.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers4" Width="1.5" PointX="29.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers5" Width="1.5" PointX="29.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers6" Width="1.5" PointX="30.75" PointY="21.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers7" Width="1.5" PointX="30.75" PointY="28.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers8" Width="1.5" PointX="31.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswers9" Width="1.5" PointX="31.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SubmittedAnswersMemberBucket" Width="1.5" PointX="31.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SuppressionGroup" Width="1.5" PointX="6" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SuppressionGroupDetail" Width="1.5" PointX="12.75" PointY="77" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SupressionMemberConfig" Width="1.5" PointX="8.25" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.SystemField" Width="1.5" PointX="21" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.Term" Width="1.5" PointX="1.5" PointY="50.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.TermType" Width="1.5" PointX="31.75" PointY="18.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.UserProfile" Width="1.5" PointX="11" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.UserRole" Width="1.5" PointX="13.25" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.UserType" Width="1.5" PointX="8.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ValGroup" Width="1.5" PointX="16.5" PointY="31.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ValGroupDetail" Width="1.5" PointX="18.75" PointY="36.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CACloud14Model.ZIPCode" Width="1.5" PointX="32.75" PointY="21.875" IsExpanded="true" />
+        <AssociationConnector Association="CACloud14Model.FK_AddAnotherGrp_AddAnotherGrpItem" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_AddAnotherGrp_MemberAAGrp_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_AddAnotherGrp_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_AAGrpItem_MemberAAGrpItem_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_AAGrpItemDetail_AAGrpItem" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_AAGrpItemDetail_MemAAGrpItemDet_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_AAGrpItemDetail_ReqGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ApplicantForm_ApplicantMember" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ApplicantForm_Form" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ApplicantMember_ApplicantProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ApplicantMember_DecisionType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ApplicantMember_MemberId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ApplicantMember_Term" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberAnswer_ApplicantMember" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Payment_ApplicantMemberId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ApplicantProfile_ApplicantTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ApplicantProfile_ResidencyTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_CommonAnswer_ApplicantProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Invitation_ApplicantProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberAnswer_ApplicantProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RecForm_ApplicantProfile" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Deadline_ApplicantTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberFee_ApplicantType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGroup_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceValue_ChoiceGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberQuestionTemplate_ChoiceGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Question_ChoiceGroupId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpReqRule_Question_T1" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpReqRule_Question_T2" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpReqRule_Question_T3" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpReqRule_Question_T4" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpReqRule_Question_T5" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpReqRule_ReqGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpRuleTrigger_ChoiceGrpReqRule" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpRuleImpact_ChoiceGrpRuleTrigger" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpRuleImpact_ChoiceValue" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpRuleTrigger_ChoiceValue_T1" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpRuleTrigger_ChoiceValue_T2" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpRuleTrigger_ChoiceValue_T3" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpRuleTrigger_ChoiceValue_T4" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ChoiceGrpRuleTrigger_ChoiceValue_T5" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_CommonAnswer_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Deadline_DeadlineTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Deadline_DecisionTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Deadline_TermId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ExportTemplate_ExportFileType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ExportTemplate_ExportTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ExportTemplateField_ExportTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_SDSConfig_ExportTemplateId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ExportTemplateField_MemberQuestionTemplateId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_SystemFields_ExportTypeId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RecForm_FormId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RecFormAnswer_Form" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Screen_Form" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Invitation_RecPersonaType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_InvitationEmailRequest_InvitationId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RecAssignment_InvitationId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RecForm_InvitationId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Member_MemberPaymentConfigId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Member_MemberTypeID" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberKeyfacts_MemberId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberRecPersonaSubType_MemberId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RecAssignment_MemberId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RecForm_MemberId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqGroup_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RoleMember_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Screen_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_SDSConfig_MemberId_idx" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_SupressionMemberConfig_MemberId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Term_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_UserProfile_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ValGroup_Member" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Member_AAGrpItemDet_AAGrpItem_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Member_AAGrpItemDet_ReqGrp_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Member_AAGrpItem_AAGrp_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Member_AAGrp_Section_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberAnswer_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberFee_ResidencyType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Member_ReqGroupDetail_Question_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberQuestionTemplate_QuestionType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberQuestionTemplate_SectionTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberReqRuleExp_Question_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberReqRuleTrgr_Question_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberValGroupDetail_Question_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Question_MemberQuestionTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberRecPersonaSubType_RecPersonaSubType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Member_ReqGroupDetail_ReqGroup_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqGroupDetail_MemberReqGrpDetailTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqGroup_MemberReqGroupTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberReqRuleExp_ReqRule_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqRuleExpression_MemberReqRuleExpTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberReqRuleTrgr_ReqRule_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqRule_MemberReqRuleTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberReqRuleTrgr_Section_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqRuleTrigger_MemberReqRuleTrgrTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberSectionTemplate_ScreenTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Screen_MemberScreenTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Section_MemberSectionTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_MemberValGroupDetail_ValGrp_Template" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ValGroupDetail_MemberValGroupDetailTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ValGroup_MemberValGroupTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_PmtReconciliationDetails_PmtReconciliation" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Privilege_UserType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RolePrivilege_Privilege" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_SeasonPrivilege_Privilege" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Question_QuestionType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Question_Section" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RecFormAnswer_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RecProfileAnswer_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqGroupDetail" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqRuleExpression_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqRuleTrigger_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_SuppressionGroupDetails_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ValGroupDetails_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqGroupDetail_ReqGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqRule_ReqGroup" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqRuleExpression_ReqRule" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ReqRuleTrigger_ReqRule" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Role_UserType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RoleMember_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_RolePrivilege_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_UserRole_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Screen_ScreenType" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_Section_Screen" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_SDSSchedule_SDSConfigId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_SupressionMemberConfig_SuppressionMemberConfigId" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_UserRole_UserProfile1" ManuallyRouted="false" />
+        <AssociationConnector Association="CACloud14Model.FK_ValGroup_Details_ValGroup" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
