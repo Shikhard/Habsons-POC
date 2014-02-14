@@ -1,53 +1,413 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-	<PropertyGroup>
-		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-		<ProjectGuid>a673f3a1-c9e3-4102-bba5-f1e5ba583184</ProjectGuid>
-		<OutputType>Library</OutputType>
-		<AppDesignerFolder>Properties</AppDesignerFolder>
-		<RootNamespace>CommonAppPoco</RootNamespace>
-		<AssemblyName>CommonAppPoco</AssemblyName>
-		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-		<FileAlignment>512</FileAlignment>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<DebugSymbols>true</DebugSymbols>
-		<DebugType>full</DebugType>
-		<Optimize>false</Optimize>
-		<OutputPath>bin\Debug\</OutputPath>
-		<DefineConstants>DEBUG;TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<DebugType>pdbonly</DebugType>
- 		<Optimize>true</Optimize>
-		<OutputPath>bin\Release\</OutputPath>
-		<DefineConstants>TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<ItemGroup>
-		<Reference Include="System"/>
-		
-		<Reference Include="System.Core"/>
-		<Reference Include="System.Xml.Linq"/>
-		<Reference Include="System.Data.DataSetExtensions"/>
-		
-		
-		<Reference Include="Microsoft.CSharp"/>
- 		
-		<Reference Include="System.Data"/>
-		<Reference Include="System.Xml"/>
-	</ItemGroup>
-	<ItemGroup>
-		<Compile Include="Class1.cs" />
-
-		<Compile Include="Properties\AssemblyInfo.cs" />
-	</ItemGroup>
-	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{290B9D8A-DE9D-4CA2-9059-B91B5EB33528}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CommonAppPoco</RootNamespace>
+    <AssemblyName>CommonAppPoco</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\MySql.Data.6.8.3\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="mysql.data.entity.EF6, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.Entities.6.8.3.0\lib\net45\mysql.data.entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\AddAnotherGrp.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AddAnotherGrpItem.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AddAnotherGrpItemDetail.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ApplicantForm.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ApplicantMember.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ApplicantProfile.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ApplicantType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ChoiceGroup.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ChoiceGrpReqRule.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ChoiceGrpRuleImpact.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ChoiceGrpRuleTrigger.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ChoiceValue.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CollegeLookup.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CommonAnswer.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CommonApp1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Deadline.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DeadlineType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DecisionType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DownloadDataHistory.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ExportFileType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ExportTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ExportTemplateField.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ExportType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Form.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\HighSchoolLookup.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Invitation.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\InvitationEmailRequest.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\KeyfactsXMLData.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Member.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberAddAnotherGrpItemDetTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberAddAnotherGrpItemTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberAddAnotherGrpTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberAnswer.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberFee.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberKeyfact.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberPaymentConfig.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberQuestionTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberRecPersonaSubType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberReqGroupDetailTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberReqGroupTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberReqRuleExpTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberReqRuleTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberReqRuleTrgrTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberScreenTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberSectionTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberValGroupDetailTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MemberValGroupTemplate.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MetricsSummaryDaily.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\MetricsSummaryHistory.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ParentEDAnswer.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Payment.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PaymentRequest.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PaymentResponse.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PdfReGenQueue.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PmtReconciliation.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PmtReconciliationDetail.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\PoolStageCode.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Privilege.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Question.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\QuestionType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RecAssignment.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RecForm.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RecFormAnswer.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RecPersonaSubType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RecPersonaType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RecProfile.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RecProfileAnswer.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RecSummaryHistory.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ReqGroup.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ReqGroupDetail.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ReqRule.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ReqRuleExpression.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ReqRuleTrigger.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ResidencyType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Role.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RoleMember.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\RolePrivilege.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Screen.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ScreenType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SDSConfig.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SDSSchedule.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SeasonPrivilege.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Section.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SessionLog.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers1.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers10.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers11.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers12.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers13.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers14.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers15.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers2.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers3.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers4.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers5.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers6.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers7.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers8.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswers9.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SubmittedAnswersMemberBucket.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SuppressionGroup.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SuppressionGroupDetail.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SupressionMemberConfig.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\SystemField.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Term.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TermType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserProfile.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserRole.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UserType.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ValGroup.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ValGroupDetail.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ZIPCode.cs">
+      <DependentUpon>CommonApp.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Model\CommonApp.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>CommonApp1.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -55,5 +415,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
- </Project>
+</Project>
