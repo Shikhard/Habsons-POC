@@ -39,9 +39,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Model\userdata.cs" />
-    <Compile Include="Model\userdetail.cs" />
+    <Compile Include="Model\C__migrationhistory.cs">
+      <DependentUpon>demo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\demo.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>demo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\phone.cs">
+      <DependentUpon>demo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\userdata.cs">
+      <DependentUpon>demo.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\userdetail.cs">
+      <DependentUpon>demo.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Model\demo.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>demo.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

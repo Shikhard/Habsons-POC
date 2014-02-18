@@ -7,16 +7,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DB
+namespace Entities.Model
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class C__migrationhistory
+    public partial class phone
     {
-        public string MigrationId { get; set; }
-        public string ContextKey { get; set; }
-        public byte[] Model { get; set; }
-        public string ProductVersion { get; set; }
+        public int Id { get; set; }
+        public string UserPhone { get; set; }
     }
 }

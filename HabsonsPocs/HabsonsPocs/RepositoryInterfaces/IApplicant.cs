@@ -9,6 +9,6 @@ namespace RepositoryInterfaces
 {
     public interface IApplicant : IRepository<ApplicantType>
     {
-        void GetApplicant();
+        ApplicantType GetApplicantTypeById(int ApplicantTypeId);
     }
 }

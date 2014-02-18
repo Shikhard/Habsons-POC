@@ -59,18 +59,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C__migrationhistory.cs">
-      <DependentUpon>demo.tt</DependentUpon>
-    </Compile>
     <Compile Include="demo.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>demo.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="demo.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>demo.tt</DependentUpon>
     </Compile>
     <Compile Include="demo.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -92,11 +84,6 @@
     </None>
     <None Include="demo.edmx.diagram">
       <DependentUpon>demo.edmx</DependentUpon>
-    </None>
-    <None Include="demo.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>demo.edmx</DependentUpon>
-      <LastGenOutput>demo.cs</LastGenOutput>
     </None>
     <None Include="packages.config" />
   </ItemGroup>

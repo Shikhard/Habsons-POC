@@ -29,5 +29,6 @@ namespace DB
         public virtual DbSet<C__migrationhistory> C__migrationhistory { get; set; }
         public virtual DbSet<userdata> userdatas { get; set; }
         public virtual DbSet<userdetail> userdetails { get; set; }
+        public virtual DbSet<phone> phones { get; set; }
     }
 }
